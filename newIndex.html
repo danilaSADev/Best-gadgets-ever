@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (min-width: 600px) {
+            body {
+                background-color: teal;
+            }
+        }
+        @media (max-width: 599px) {
+            body{
+                background-color: thistle;
+            }
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            backdrop-filter: drop-shadow(4px 4px 5px black);
+        }
+        table thead {
+            color: orange;
+            background-color: whitesmoke;
+        }
+        td, th {
+            border: 1px solid orange;
+            padding: 20px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul li {
+            color: orangered;
+        }
+
+        hr {
+            border-color:black;
+            border-style: dotted;
+            width: 80%;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1 style="color: gray;">Hello world!</h1>
+    <h2 style="color: cadetblue;">This text is smaller!</h2>
+    <table>
+        <thead>
+            <th>Ocean</th>
+            <th>Avarage Depth</th>
+            <th>Maximum Depth</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pacific</td>
+                <td>4280 m</td>
+                <td>10911 m</td>
+            </tr>
+            <tr>
+                <td>Atlantic</td>
+                <td>3646 m</td>
+                <td>8486 m</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <ol>
+        <li>foo</li>
+        <li>bar
+            <ul>
+                <li>hello</li>
+                <li>my</li>
+                <li>html</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
