@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <title>Most famous cities</title>
 </head>
 <body>
     <header>
-        <nav class="top-menu">
-            <ul class="header-menu">
+        <div id="nav-toggle" onclick="onToggle()">
+            <i class="ri-function-line ri-2x" style="color: white;"></i>
+        </div>
+        <nav id="nav-menu-list" class="header-menu">
+            
+            <ul  class="options-list">
                 <li><a class="header-element" href="#city-image">Home</a></li>
                 <li><a class="header-element" href="#About">About</a></li>
                 <li><a class="header-element" href="#Idea">Idea</a></li>
                 <li><a class="header-element" href="#Contacts">Contacts</a></li>
                 <li><a class="header-element" href="#">Log In</a></li>
-            </ul>            
+            </ul>   
         </nav>
     </header>
     <div id="city-image" style="color: white;">
