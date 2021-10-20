@@ -1,0 +1,20 @@
+#welcome {
+    background: radial-gradient(19.2% 36.03% at 28vw 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%), #000000;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 600px;
+    width: 100vw;
+}
+
+#welcome img {
+    width: 28vw;
+    background-repeat: no-repeat;
+}
+
+#welcome span {
+    color: white;
+    width: 28vw;
+}

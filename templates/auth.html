@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dc82731040.js" crossorigin="anonymous"></script>
+    <!-- jQuerry -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/auth.css">
+    <!-- Loading header and footer -->
+    <script> 
+        $(function(){
+          $("header").load("../templates/header.html"); 
+          $("footer").load("../templates/footer.html"); 
+        });
+    </script> 
+    <title>Authorization</title>
+</head>
+<!-- HEADER -->
+<header></header>
+<body>
+    <div class="auth-forms">
+        <div id="sign-in" class="default-frame">
+            <h1>Authorize in Best Gadgets</h1>
+            <input placeholder="e-mail" type="text">
+            <input placeholder="password" type="password">
+            <h3><a id="forgot-password-link" href="/templates/forgot-password.html">Forgot password?</a></h3>
+            <a class="default-button" style="color: white;" href="">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>
