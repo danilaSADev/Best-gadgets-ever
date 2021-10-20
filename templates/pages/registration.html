@@ -8,13 +8,14 @@
     <!-- jQuerry -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/auth.css">
+    <script src="../../scripts/auth-logic.js"></script>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/auth.css">
     <!-- Loading header and footer -->
     <script> 
         $(function(){
-          $("header").load("../templates/header.html"); 
-          $("footer").load("../templates/footer.html"); 
+          $("header").load("../utility/header.html"); 
+          $("footer").load("../utility/footer.html"); 
         });
     </script> 
     <title>Registration</title>
@@ -26,13 +27,13 @@
         <div id="sign-up" class="default-frame">
             <h1 style="margin-bottom: 0;">Sign up for a free account</h1>
             <div style="display: flex; justify-content: space-evenly; width: 100%;">
-                <input style="width: 30%;" type="text" placeholder="First name" id="">
-                <input style="width: 30%;" type="text" placeholder="Last name" id="">
+                <input name="firstName" style="width: 30%;" type="text" placeholder="First name">
+                <input name="lastName" style="width: 30%;" type="text" placeholder="Last name">
             </div>
-            <input type="text" placeholder="email" style="width: 75%;">
-            <input type="text" placeholder="create password" style="width: 75%;">
-            <h3><a id="have-account-link" href="">I already have account!</a></h3>
-            <a class="default-button" style="color: white;" href="">Sign Up</a>
+            <input name="email" type="text" placeholder="email" style="width: 75%;">
+            <input name="password" type="password" placeholder="create password" style="width: 75%;">
+            <h3><a id="have-account-link" href="../pages/auth.html">I already have account!</a></h3>
+            <a class="default-button" onclick="getRegistrationData()" style="color: white;">Sign Up</a>
         </div>
     </div>
 </body>
