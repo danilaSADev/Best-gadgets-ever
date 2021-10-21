@@ -32,6 +32,10 @@ body {
     height: 400px;
 }
 
+#sign-in button:hover{
+    cursor: pointer;
+}
+
 .auth-forms * {
     margin-top: 20px;
 }

@@ -12,18 +12,13 @@
     <link rel="stylesheet" href="../../styles/styles.css">
     <link rel="stylesheet" href="../../styles/auth.css">
     <!-- Loading header and footer -->
-    <script> 
-        $(function(){
-          $("header").load("../utility/header.html"); 
-          $("footer").load("../utility/footer.html"); 
-        });
-    </script> 
+    <script src="../../scripts/utility-loader.js"></script>
     <title>Registration</title>
 </head>
 <!-- HEADER -->
 <header></header>
 <body>
-    <div class="auth-forms">
+    <form class="auth-forms">
         <div id="sign-up" class="default-frame">
             <h1 style="margin-bottom: 0;">Sign up for a free account</h1>
             <div style="display: flex; justify-content: space-evenly; width: 100%;">
@@ -35,6 +30,6 @@
             <h3><a id="have-account-link" href="../pages/auth.html">I already have account!</a></h3>
             <a class="default-button" onclick="getRegistrationData()" style="color: white;">Sign Up</a>
         </div>
-    </div>
+    </form>
 </body>
 </html>

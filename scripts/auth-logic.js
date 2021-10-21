@@ -1,3 +1,4 @@
+sessionStorage.setItem("isLoggedIn", false)
 
 function writeToLocalStorage(data)
 {
@@ -13,6 +14,11 @@ function checkWithLocalStorage(data)
     return false
 }
 
+function deleteUserData()
+{
+    localStorage.clear()
+}
+
 function getUserData()
 {
     var data = [localStorage.getItem("login"),  localStorage.getItem("password")]
@@ -21,7 +27,7 @@ function getUserData()
 
 function checkUserInput()
 {
-
+    
 }
 
 function checkLogIn(signInData)
@@ -55,4 +61,5 @@ function trySignIn()
         return;
     }
     window.location.href = "index.html"
+    sessionStorage.setItem("isLoggedIn", true)
 }

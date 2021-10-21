@@ -11,19 +11,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>   
     <!-- Loading header and footer -->
-    <script> 
-        $(function(){
-          $("header").load("../../templates/utility/header.html"); 
-          $("footer").load("../utility/footer.html"); 
-        });
-    </script> 
+    <script src="../../scripts/utility-loader.js"></script>
     <link rel="stylesheet" href="../../styles/styles.css">
     <link rel="stylesheet" href="../../styles/home.css">
 </head>
-<!-- HEADER -->
+<!-- HEADER --> 
 <header></header>
 <!-- HOME BODY -->
-<body>
+<body onload="checkIfLoggedIn()">
     <div id="welcome">
         <img src="../../images/airpods.png"> 
         <span>
