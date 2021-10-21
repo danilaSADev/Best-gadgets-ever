@@ -1,6 +1,11 @@
 
     <!-- HEADER -->
     <nav>
+        <script>
+            var isLoggedIn = sessionStorage.getItem("isLoggedIn")
+            document.getElementById("auth-buttons").style.display = isLoggedIn == "true" ? "none" : "flex"
+            document.getElementById("profile-button").style.display = isLoggedIn != "true" ? "none" : "flex"
+        </script>
         <div class="logo">BEST GADGETS</div>
         <div style="display: flex; justify-content: space-evenly; width: 50%;">
             <a href="../pages/index.html">Home</a>
