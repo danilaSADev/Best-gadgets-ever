@@ -18,6 +18,12 @@ function writeToLocalStorage(data)
     localStorage.setItem("password", data.password)
 }
 
+function signOut() 
+{
+    sessionStorage.setItem("isLoggedIn", false)
+    window.location.href = "index.html"
+}
+
 function clearUserLocalStorage()
 {
     localStorage.clear()
