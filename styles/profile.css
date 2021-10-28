@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.profile-info-container {
+    background: radial-gradient(51.65% 29.39% at 50% 31.1%, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #000000;
+    height: 45vh;
+    color: white;
+    width: 100%;
+    margin-top: 134px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-frame {
+    padding-left: 15px;
+    color: white;
+    background-color: #FFFFFF12;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.profile-actions {
+    padding-left: 15px;
+    background-color: #FFFFFF12;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-actions :first-child{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-actions button {
+    color: white;
+    font-family: Montserrat;
+    margin-top: 10px;
+    width: fit-content;
+    font-weight: 100;
+    height: 50px;
+}
+
+.profile-actions button:last-child {
+    margin-bottom: 10px;
+}

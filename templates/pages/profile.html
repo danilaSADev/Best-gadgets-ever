@@ -14,19 +14,30 @@
     <script src="../../scripts/utility-loader.js"></script>
     <script src="../../scripts/auth-logic.js"></script>
     <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
 </head>
 <header></header>
-<body>
-
-    <button onclick="clearUserLocalStorage()">
-        Delete Account
-    </button>
-    <button onclick="signOut()">
-        Sign Out
-    </button>
-    
-    <div>
-
+<body style="display: flex; flex-direction: column;">
+    <div class="profile-info-container">
+        <div class="main-frame default-frame">
+            <h1 class="montserrat-font">Profile information</h1>
+            <h2 id="firstAndLastName">First and last name</h2>
+            <h2 id="email">yourmail@service.com</h2>
+            <h2 id="birthdate">Birthdate</h2>
+            <h2 id="access">access</h2>
+        </div>
+        <script>
+            displayDataFromLocalStorage()
+        </script>
+        <div class="profile-actions default-frame">
+            <h1>Quick actions</h1>
+            <button class="default-button" style="background-color: rgba(255, 0, 0, 0.1);" onclick="clearUserLocalStorage()">
+                Delete Account
+            </button>
+            <button class="default-button"  onclick="signOut()">
+                Sign Out
+            </button>
+        </div>
     </div>
 </body>
 </html>

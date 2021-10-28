@@ -18,18 +18,25 @@
 <!-- HEADER -->
 <header></header>
 <body>
-    <form class="auth-forms">
-        <div id="sign-up" class="default-frame">
-            <h1 style="margin-bottom: 0;">Sign up for a free account</h1>
-            <div style="display: flex; justify-content: space-evenly; width: 100%;">
-                <input name="firstName" style="width: 30%;" type="text" placeholder="First name">
-                <input name="lastName" style="width: 30%;" type="text" placeholder="Last name">
-            </div>
-            <input name="email" type="text" placeholder="email" style="width: 75%;">
-            <input name="password" type="password" placeholder="create password" style="width: 75%;">
-            <h3><a id="have-account-link" href="../pages/auth.html">I already have account!</a></h3>
-            <a class="default-button" onclick="tryRegister()" style="color: white;">Sign Up</a>
+    <form id="sign-up" class="default-frame auth-forms" onchange="tryValidateRegisterData()">
+        <h1 style="margin-bottom: 0;">Sign up for a free account</h1>
+        <div style="display: flex; justify-content: space-evenly; width: 100%;">
+            <input name="firstName" style="width: 30%;" type="text" placeholder="First name">
+            <input name="lastName" style="width: 30%;" type="text" placeholder="Last name">
         </div>
+        <label for="firstName">Optional</label>
+        <input name="email" type="text" placeholder="e-mail" style="width: 75%;">
+        <label for="email" style="color: red; display: none;">Enter valid e-mail address!</label>
+        <input name="password" type="password" placeholder="create password" style="width: 75%;">
+        <label for="password" style="color: red; display: none;">Use more than 6 symbols(up and lowercase letters, special symbols .?,!/@ etc. and numbers)</label>
+        <input value="1970-01-01" type="date" name="birthdate" min="1900-01-01" max="2018-01-01" placeholder="birthdate" style="width: 75%;">
+        <label for="birthdate">Your birthdate</label>
+        <select name="profileType" id="profileType" style="width: 75%;">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        <h3><a id="have-account-link" href="../pages/auth.html">I already have account!</a></h3>
+        <input class="default-button" type="submit" name="submit" value="Sign up!" onclick="tryRegister()">
     </form>
 </body>
 </html>

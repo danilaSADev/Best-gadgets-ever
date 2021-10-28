@@ -7,7 +7,7 @@
             document.getElementById("auth-buttons").style.display = isLoggedIn == "true" ? "none" : "flex"
             document.getElementById("profile-button").style.display = isLoggedIn != "true" ? "none" : "flex"
         </script>
-        <div class="logo">BEST GADGETS</div>
+        <div class="logo" style="color: var(--main-color)">BEST GADGETS</div>
         <div style="display: flex; justify-content: space-evenly; width: 50%;">
             <a href="../pages/index.html">Home</a>
             <a href="../pages/view.html">View</a>
@@ -18,7 +18,7 @@
             <a class="auth-button" style="width: 10vw;" href="../pages/registration.html">Sign Up</a>
             <a class="auth-button" style="width: 7.5vw;" href="../pages/auth.html">Sign In</a>
         </div>
-        <a type="button" href="../pages/profile.html" id="profile-button">
-            <i class="fas fa-user-alt"></i>
+        <a href="../pages/profile.html" id="profile-button">
+            <i class="fas fa-user-alt" style="font-size: 24px;"></i>
         </a>
     </nav>
