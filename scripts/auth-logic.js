@@ -52,7 +52,6 @@ function displayDataFromLocalStorage()
     {
         var element = data[key]
         var textField = document.getElementById(key)
-        console.log(element)
         if (textField)
         {
             var fixedKey = key.replace(/([a-z])([A-Z])/g, '$1 $2');

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles/profile.css">
 </head>
 <header></header>
-<body style="display: flex; flex-direction: column;">
+<body  style="display: flex; flex-direction: column;">
     <div class="profile-info-container">
         <div class="main-frame default-frame">
             <h1 class="montserrat-font">Profile information</h1>
@@ -28,6 +28,12 @@
         </div>
         <script>
             displayDataFromLocalStorage()
+            function changeVariableColor()
+            {
+                var color = document.getElementById("colorVariable").value
+                localStorage.setItem("theme-color", color)
+                document.documentElement.style.setProperty('--my-new-var', color);
+            }
         </script>
         <div class="profile-actions default-frame">
             <h1>Quick actions</h1>
@@ -37,6 +43,8 @@
             <button class="default-button"  onclick="signOut()">
                 Sign Out
             </button>
+            <input id="colorVariable" name="colorVariable" type="color" onchange="changeVariableColor()">
+            <label for="colorVariable">Theme Color</label>
         </div>
     </div>
 </body>

@@ -49,6 +49,7 @@ body {
 }
 
 .auth-forms input, select {
+    
     font-family: Montserrat;
     padding-left: 25px;
     width: 60%;
