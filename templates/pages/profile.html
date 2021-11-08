@@ -19,12 +19,13 @@
 <header></header>
 <body  style="display: flex; flex-direction: column;">
     <div class="profile-info-container">
-        <div class="main-frame default-frame">
+        <div id="profile-info" class="main-frame default-frame">
             <h1 class="montserrat-font">Profile information</h1>
             <h2 id="firstAndLastName">First and last name</h2>
             <h2 id="email">yourmail@service.com</h2>
             <h2 id="birthdate">Birthdate</h2>
             <h2 id="access">access</h2>
+            <input type="button" value="Open Quick Actions" onclick="showQuickActions()">
         </div>
         <script>
             displayDataFromLocalStorage()
@@ -34,8 +35,20 @@
                 localStorage.setItem("theme-color", color)
                 document.documentElement.style.setProperty('--my-new-var', color);
             }
+
+            function showQuickActions() 
+            {
+                document.getElementById("quick-actions").style.display = "flex"
+                document.getElementById("profile-info").style.display = "none"
+            }
+
+            function closeQuickActions() 
+            {
+                document.getElementById("quick-actions").style.display = "none"
+                document.getElementById("profile-info").style.display = "flex"
+            }
         </script>
-        <div class="profile-actions default-frame">
+        <div id="quick-actions" style="display: none;" class="profile-actions default-frame">
             <h1>Quick actions</h1>
             <button class="default-button" style="background-color: rgba(255, 0, 0, 0.1);" onclick="clearUserLocalStorage()">
                 Delete Account
@@ -45,6 +58,7 @@
             </button>
             <input id="colorVariable" name="colorVariable" type="color" onchange="changeVariableColor()">
             <label for="colorVariable">Theme Color</label>
+            <input type="button" value="Close Quick Actions" onclick="closeQuickActions()">
         </div>
     </div>
 </body>
