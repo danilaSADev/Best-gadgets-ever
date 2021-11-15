@@ -1,0 +1,26 @@
+body 
+{
+    background-color: white;
+    font-family: Montserrat;
+}
+
+.text-block-404
+{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 144px;
+    flex-direction: column;
+
+    color: linear-gradient(rgba(255, 255, 255, 0.2) 0.2, rgba(0, 0, 0, 0) 0.5, rgba(0, 0, 0, 0.55), 1);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(12px);
+}
+
+.text-block-404 .smaller-text {
+    font-weight: 300;
+    font-size: 36px;
+}
