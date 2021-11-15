@@ -123,26 +123,3 @@ function tryValidateSignInData()
     }
     return isValid
 }
-
-function trySignIn()
-{
-    var isValid = tryValidateSignInData()
-    if (!isValid)
-    {
-        return
-    }
-    sessionStorage.setItem("isLoggedIn", true)
-    window.location = "index.html"
-}
-
-function tryRegister() 
-{
-    var tuple = tryValidateRegisterData()
-    if (tuple.isValid)
-    {
-        writeToLocalStorage(tuple.data)
-        sessionStorage.setItem("isLoggedIn", true)
-        window.location.replace("index.html")
-        document.getElementById("sign-up").action = "index.html"
-    }
-}

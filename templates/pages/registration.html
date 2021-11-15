@@ -18,7 +18,7 @@
 <!-- HEADER -->
 <header></header>
 <body>
-    <form id="sign-up" class="default-frame auth-forms" onchange="tryValidateRegisterData()">
+    <form id="sign-up" action="../../../../scripts/registration-action.php" method="post" class="default-frame auth-forms" > <!--  -->
         <h1 style="margin-bottom: 0;">Sign up for a free account</h1>
         <div style="display: flex; justify-content: space-evenly; width: 100%;">
             <input name="firstName" style="width: 30%;" type="text" placeholder="First name">
@@ -32,12 +32,12 @@
         <input value="1970-01-01" type="date" name="birthdate" min="1900-01-01" max="2018-01-01" placeholder="birthdate" style="width: 75%;">
         <label for="birthdate">Your birthdate</label>
         <select name="profileType" id="profileType" style="width: 75%;">
-            <option value="user">User</option>
-            <option value="admin">Admin</option>
+            <option value="0">User</option>
+            <option value="1">Admin</option>
         </select>
         <h3><a id="have-account-link" href="../pages/auth.html">I already have account!</a></h3>
         <input type="reset" name="" id="">
-        <input class="default-button" type="submit" name="submit" value="Sign up!" onclick="tryRegister()">
+        <input class="default-button" type="submit" name="submit" value="Sign up!" >
     </form>
 </body>
 </html>

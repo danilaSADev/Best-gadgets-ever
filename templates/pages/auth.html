@@ -19,13 +19,13 @@
 <!-- HEADER -->
 <header></header>
 <body>
-    <form id="sign-in" class="auth-forms default-frame">
+    <form id="sign-in" action="../../../../scripts/login-action.php" method="post" class="auth-forms default-frame">
         <h1>Authorize in Best Gadgets</h1>
         <input name="email" placeholder="e-mail" type="text" style="width: 75%;">
         <input name="password" placeholder="password" type="password" style="width: 75%;">
         <label id="not-correct-pair-label" style="color: red; display: none;">Incorrect pair of email and password!</label>
         <h3><a id="forgot-password-link" href="forgot-password.html">Forgot password?</a></h3>
-        <input class="default-button" value="Sign In" type="button" name="submit" onclick="trySignIn()">
+        <input class="default-button" value="Sign In" type="submit" name="submit">
     </form>
 </body>
 </html>
